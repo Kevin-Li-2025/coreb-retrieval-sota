@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+._*
+.venv/
+reports/score_cache/
+reports/embedding_cache/
+*.log
+*.pid
