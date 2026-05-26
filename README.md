@@ -1,7 +1,9 @@
 # CoREB Retrieval SOTA
 
-Reproducible CoREB `v202603` public-snapshot retrieval SOTA with C2LLM-7B dense
-retrieval under the official query-weighted `nDCG@10` protocol.
+Reproducible **CoREB `v202603` public-snapshot retrieval SOTA** with C2LLM-7B
+dense retrieval under the official query-weighted `nDCG@10` protocol.
+
+This is a retrieval SOTA claim, not a full reranker SOTA claim.
 
 ## Result
 
@@ -19,9 +21,9 @@ Per-task `nDCG@10`:
 | `code2code` | `0.657871` |
 | `code2text` | `0.803820` |
 
-The CoREB project page reports the best `v202603` public-snapshot retrieval
-overall as `0.624` for GemEmb-2. This run obtains `0.633174` with an open
-C2LLM-7B dense retriever.
+The official CoREB project page reports the best `v202603` public-snapshot
+retrieval overall as `0.624` for GemEmb-2. This run obtains `0.633174` with an
+open C2LLM-7B dense retriever.
 
 ## Protocol
 
@@ -67,3 +69,14 @@ The best post-test validation experiment on `release_v2602` reaches
 for `code2code`, and C2LLM dense retrieval for `code2text`.
 
 This validation number is not used as a clean `release_v2603` test claim.
+
+## Authoritative Sources
+
+- [CoREB project page](https://hq-bench.github.io/coreb-page/): official
+  benchmark page and public-snapshot retrieval leaderboard.
+- [CoREB GitHub repository](https://github.com/hq-bench/coreb): official
+  benchmark code, evaluation runner, and protocol details.
+- [CoREB Hugging Face dataset](https://huggingface.co/datasets/hq-bench/coreb):
+  official benchmark data releases.
+- [C2LLM-7B model](https://huggingface.co/codefuse-ai/C2LLM-7B): dense
+  retriever backbone used for the submitted run.
